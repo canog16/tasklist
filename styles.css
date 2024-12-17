@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	background: lightgray;
+}
+
+
+.to-do-app {
+   width: 100%;
+   max-width: 540px;
+   margin: 100px auto 20px;
+   background-color: mediumpurple;
+   padding: 40px;
+
+}
+
+h1 {
+   padding-bottom: 20px;
+
+}
+
+input {
+	border: none;
+	outline: none;
+	
+	padding: 10px;
+	color: black;
+
+}
+
+#button {
+   cursor: pointer;   
+
+}
+
+#input-box {
+	font-weight: 15px;
+}
+
+
+ul li {
+   list-style: none;
+   font-size: 17px;
+   padding: 12px 8px 12px 50px;
+   user-select: none;
+   cursor: pointer;
+   position: relative;
+}
+
+
+
+ul li::before {
+content: '';
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(wheel.jpg);
+background-size: cover;
+background-position: center;
+top: 12px;
+left: 8px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before {
+background-image: url(check.jpg);
+
+}
+
+ul li span {
+
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+color: #555;
+font-size: 22px;
+line-height: 40px;
+text-align: center;	
+border-radius: 50%;
+}
+
+ul li span:hover {
+background: grey;
+
+}
